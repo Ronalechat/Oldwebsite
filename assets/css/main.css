@@ -907,9 +907,6 @@
 	header > p {
 		color: #aaa;
 	}
-	header > h3 {
-		color: #aaa;
-	}
 
 /* Image */
 
@@ -1538,6 +1535,90 @@
 						left: 35%;
 					}
 
+					/* Home */
+
+			#home {
+				padding: 0;
+				height: 20em;
+			}
+
+				#home .pic {
+					display: block;
+					position: absolute;
+					right: -1px;
+					top: 0;
+					height: 100%;
+					text-decoration: none;
+				}
+
+					#home .pic img {
+						position: relative;
+						display: block;
+						height: 100%;
+					}
+
+					#home .pic .arrow {
+						display: block;
+						position: absolute;
+						right: 0;
+						top: 50%;
+						margin-top: -1.375em;
+						width: 2.75em;
+						height: 2.75em;
+						background: #000;
+						background: rgba(0, 0, 0, 0.75);
+						color: #ffffff;
+						text-align: center;
+						line-height: 2.75em;
+						font-size: 1.5em;
+						z-index: 1;
+						-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+						-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+						-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+						transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					}
+
+						#home .pic .arrow:before {
+							position: relative;
+							padding-right: 0;
+							top: 0.125em;
+						}
+
+						#home .pic .arrow span {
+							display: block;
+							text-indent: -9999px;
+						}
+
+					#home .pic:hover .arrow {
+						width: 3em;
+						padding-right: 0.25em;
+					}
+
+				#home header {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					margin-left: 2.5em;
+				}
+
+					#home header > h1 {
+						position: absolute;
+						left: 0;
+						bottom: 52.5%;
+						margin: 0;
+					}
+
+					#home header > h3 {
+						position: absolute;
+						left: 0;
+						top: 52.5%;
+						font-size: 1.5em;
+						letter-spacing: -0.015em;
+						margin-top: 0;
+					}
+
 		/* Footer */
 
 			#footer {
@@ -1685,34 +1766,6 @@
 					font-size: 1.25em;
 				}
 
-				/* home */
-
-			#home .pic {
-				width: 100%;
-			}
-
-				#home .pic img {
-					display: block;
-					width: 100%;
-				}
-
-				#home .pic .arrow {
-					display: none;
-				}
-
-			#home header {
-				text-align: center;
-			}
-
-				#home header > h1 {
-					font-size: 2.15em;
-					letter-spacing: -0.025em;
-				}
-
-				#home header > p {
-					font-size: 1.25em;
-				}
-
 		/* Footer */
 
 			#footer {
@@ -1730,8 +1783,6 @@
 					}
 
 	}
-
-
 
 .contactlink {
 	padding-left: 30px;
@@ -1774,13 +1825,14 @@ i {
 	padding: 15px;
 	color: #3d3d3d;
 }
-.icon {
-	padding: 15px;
+.qualicon {
+	padding: 15px 15px 0px 15px;
 	display: inline-block;
 	width: 100px;
-	top: 30px;
-	padding-bottom: 30px;
-
+}
+.qualiconico {
+	display: inline-block;
+	width: 100px;
 }
 
 .iconnames {
@@ -1789,7 +1841,3 @@ i {
 .p5 {
 	margin-left: 40px;
 }
-/*.slither img.portrait {
-  width: 100%;
-  height: auto;
-}*/
